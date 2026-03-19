@@ -1,9 +1,10 @@
 package com.Billetera;
 
 public class Billetera {
-	 double saldo; 
-	    String titular; 
-	 
+	double saldo; 
+	String moneda = "USD";
+	String titular; 
+	
 	    public Billetera(String titular, double saldoInicial) { 
 	        this.titular = titular; 
 	        this.saldo = saldoInicial; 
@@ -14,7 +15,7 @@ public class Billetera {
 	    } 
 	 
 	    public void mostrarSaldo() { 
-	        System.out.println("Saldo de " + titular + ": $" + saldo); 
+	        System.out.println("Saldo de " + titular + " en " + moneda + ": $" + saldo); 
 	    } 
 	}
 
