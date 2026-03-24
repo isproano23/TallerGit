@@ -1,16 +1,18 @@
 package com.Billetera;
 
 public class Billetera {
-	 double blanceTotal; 
+	 double balanceTotal; 
+	 String moneda = "USD";
 	 String titular; 
+	 boolean cuentaActiva = true; 
 	 
-	    public Billetera(String titular, double balanceTotal) { 
+	    public Billetera(String titular, double saldoInicial) { 
 	        this.titular = titular; 
-	        this.balance = balanceTotal; 
+	        this.balanceTotal = saldoInicial; 
 	    } 
-	 
+	 // probando 
 	    public void transferir(double monto) { 
-	        balanceTotal= blance- monto; 
+	        balanceTotal= balanceTotal- monto; 
 	    } 
 	 
 	    public void mostrarSaldo() { 
