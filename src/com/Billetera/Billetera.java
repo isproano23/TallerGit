@@ -14,7 +14,7 @@ public class Billetera {
 	    public void transferir(double monto) { 
 	        balanceTotal= balanceTotal- monto; 
 	    } 
-	 
+	  // atributos
 	    public void mostrarSaldo() { 
 	        System.out.println("Saldo de " + titular + ": $" + balanceTotal); 
 	    } 
