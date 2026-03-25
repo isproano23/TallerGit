@@ -17,6 +17,8 @@ public class Billetera {
 				return;
 			}
 			balanceTotal= balanceTotal- (monto*1.05);
+
+			System.out.println("Transferencia exitosa de: $" + monto);
 	    } 
 	  // atributos 
 	    public void mostrarSaldo() { 
