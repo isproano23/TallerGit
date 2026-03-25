@@ -16,6 +16,8 @@ public class Main {
 		double monto = scanner.nextDouble();
 
 	    miBilletera.transferir(monto); 
+		miBilletera.transferir(40.0); 
+		miBilletera.transferir(60.0); 
 	    miBilletera.mostrarSaldo(); 
 		 scanner.close();
 	    } 
