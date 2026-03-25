@@ -12,7 +12,11 @@ public class Billetera {
 	    } 
 	 
 	    public void transferir(double monto) { 
-	        balanceTotal= balanceTotal- monto; 
+			if(monto>balanceTotal){
+ 			System.out.println("Fondos Insuficiente " );
+			}
+			return ;
+			
 	    } 
 	  // atributos 
 	    public void mostrarSaldo() { 
