@@ -1,5 +1,7 @@
 package com.Billetera;
 
+import java.util.Scanner;
+
 public class Billetera {
 	 double balanceTotal; 
 	 String moneda = "USD";       
@@ -20,6 +22,15 @@ public class Billetera {
 
 			System.out.println("Transferencia exitosa de: $" + monto);
 	    }  
+
+		public void realizarTransferencia() {
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("¿Cuánto desea transferir? ");
+	        double monto = scanner.nextDouble();
+	        transferir(monto);
+	        scanner.close();
+	    }
+		
 	  // atributos 
 	    public void mostrarSaldo() { 
 	        System.out.println("Saldo de " + titular + ": $" + balanceTotal); 

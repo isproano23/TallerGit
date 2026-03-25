@@ -1,18 +1,25 @@
 package com.main;
 
 import com.Billetera.Billetera;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-	
+		Scanner scanner = new Scanner(System.in);
 
 	    Billetera miBilletera = new Billetera("Juan Perez", 100.0); 
 	    miBilletera.mostrarSaldo(); 
-	    miBilletera.transferir(20.0); 
+
+		//preguntar cuanto transferir
+		System.out.println("¿Cuánto desea transferir? ");
+		double monto = scanner.nextDouble();
+
+	    miBilletera.transferir(monto); 
 		miBilletera.transferir(40.0); 
 		miBilletera.transferir(60.0); 
 	    miBilletera.mostrarSaldo(); 
+<<<<<<< HEAD
 
 
 
@@ -26,5 +33,8 @@ public class Main {
 
 		
 
+=======
+		 scanner.close();
+>>>>>>> 56c6dacd43545dc9aa3cc76bdf0186af6ff6783f
 	    } 
 	    } 
