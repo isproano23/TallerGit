@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+    <script src="utilitarios.js"></script>
+    <script src="calcularTotal.js"></script>
+    <script src="precio.js"></script>
+    <link rel="stylesheet" href="orden.css">
+  </head>
+  <body>
+    <h1>SISTEMA TECNOSTORE</h1>
+    <h3>Ingrese el Nombre del cliente</h3>
+    <input type="text" id="txtnombre">
+    <div id="lblEroor1" class="errores"></div>
+    <h3>Ingrese el nombre del producto</h3>
+    <input type="text" id="txtproducto" />
+    <div id="lblError2" class="errores"></div>
+    <h3>Ingrese la cantidad a comprar</h3>
+    <input type="number" id="txtcantidad" />
+    <div id="lblError3" class="errores"></div>
+    <h3>Ingrese el precio del producto</h3>
+    <input type="text" id="txtprecio">
+     <div id="lblError4" class="errores"></div>
+    <div class="resultado">Total a Pagar:</div>
+    <h3 id="lblResultado" class="resultado" >0.0</h3>
+    <h3 id="lblResultado2" class="resultado2"></h3>
+    <input type="button" value="Calcular el Total a pagar" onclick="calcularPrecioFinal()">
+
+  </body>
+</html>

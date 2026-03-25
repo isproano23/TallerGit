@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Estudiante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Color de fondo suave para la página */
+            color: #333; /* Color de texto principal */
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #17da69; /* Línea azul para separar el header */
+            padding-bottom: 10px;
+            background-color: #ffffff; /* Fondo blanco para el header */
+            padding: 20px;
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        .university h1 {
+            font-size: 28px; /* Tamaño grande para el nombre de la universidad */
+            color: #5eda46; /* Color azul para el título */
+            margin-bottom: 10px;
+        }
+        .university img {
+            max-width: 250px; /* Tamaño aumentado para la imagen de la universidad */
+            height: auto;
+            border: 2px solid #ddd; /* Borde sutil alrededor de la imagen */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        header p {
+            font-size: 16px; /* Tamaño mediano para párrafos en el header */
+            color: #555; /* Color gris para texto secundario */
+            margin: 5px 0;
+        }
+        .student {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            background-color: #ffffff; /* Fondo blanco para la sección del estudiante */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+        .student img {
+            max-width: 180px; /* Tamaño aumentado para la foto del estudiante */
+            height: auto;
+            margin-right: 20px;
+            border-radius: 50%; /* Forma circular para la foto */
+            border: 3px solid #007bff; /* Borde azul */
+        }
+        .student h2 {
+            font-size: 22px; /* Tamaño para el subtítulo del estudiante */
+            color: #007bff; /* Color azul */
+            margin: 0;
+        }
+        .student p {
+            font-size: 18px; /* Tamaño para el nombre del estudiante */
+            color: #333; /* Color negro */
+            margin: 5px 0;
+        }
+        .resume {
+            margin-top: 20px;
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+        .resume h2 {
+            font-size: 24px; /* Tamaño grande para el título de la hoja de vida */
+            color: #007bff; /* Color azul */
+            border-bottom: 1px solid #ddd; /* Línea debajo del título */
+            padding-bottom: 10px;
+        }
+        .resume ol {
+            list-style-type: decimal; /* Lista numerada con números */
+            padding-left: 20px; /* Sangría para la lista */
+            color: #555; /* Color gris para el texto de la lista */
+            font-size: 16px; /* Tamaño mediano para los elementos */
+        }
+        .resume ol li {
+            margin-bottom: 10px;
+        }
+        .resume ul {
+            list-style-type: disc; /* Lista no numerada con viñetas */
+            padding-left: 20px; /* Sangría para la lista */
+            color: #555; /* Color gris para el texto de la lista */
+            font-size: 16px; /* Tamaño mediano para los elementos */
+        }
+        .resume ul li {
+            margin-bottom: 10px;
+        }
+        .resume strong {
+            color: #333; /* Color negro para las etiquetas en negrita */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="university">
+            <h1>Universidad de las Fuerzas Armadas "ESPE"</h1>
+            <img src="./imagenes/espe.jpeg">
+        </div>
+        <p><strong>Materia y NRC:</strong> Fundamentos de Sistemas Web, NRC 29286</p>
+        <p><strong>Nombre de la materia:</strong> Fundamentos de Sistemas Web</p>
+        <p><strong>Fecha:</strong> 20 de Noviembre de 2025</p>
+    </header>
+
+    <section class="student">
+        <img src="./imagenes/foto.jpg">
+        <div>
+            <h2>Nombres completos del estudiante:</h2>
+            <p>Isaac Sebastian Proaño  Panchi</p>
+        </div>
+    </section>
+
+    <section class="resume">
+        <h2>Hoja de Vida</h2>
+        <h3>Estudios Realizados</h3>
+        <ol>
+            <li><strong>Estudios primarios:</strong> Escuela "Juan Montalvo", cursados de 2006 a 2012</li>
+            <li><strong>Estudios secundarios: </strong>Unidad Educativa "Guaquil"</strong> Bachiller en  Ciencias</li>
+            <li><strong>Carrera que está cursando:</strong> Ingeniería Tecnologias de la Informacion</li>
+        </ol>
+        <h3>Información Personal</h3>
+        <ul>
+            <li><strong>Fecha de nacimiento:</strong> 11 de enero de 2001</li>
+            <li><strong>Otras habilidades:</strong> Programación Web, Ingles Avanzando</li>
+        </ul>
+    </section>
+</body>
+</html>
+

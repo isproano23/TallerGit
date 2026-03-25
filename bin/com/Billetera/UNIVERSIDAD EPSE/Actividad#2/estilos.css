@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center; /* Centra la imagen y el título */
+}
+
+.logo {
+    max-width: 40%; /* Hace la imagen responsive */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Nueva clase para el enlace en confirmacion.html */
+.button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    input, button, .button {
+        font-size: 14px;
+    }
+    
+    .logo {
+        max-width: 80%; /* Reduce un poco en tablets para mejor ajuste */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 95%;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 10px;
+    }
+    
+    input, button, .button {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .logo {
+        max-width: 70%; /* Más pequeña en móviles */
+    }
+}
