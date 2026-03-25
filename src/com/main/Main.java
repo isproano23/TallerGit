@@ -19,7 +19,6 @@ public class Main {
 		miBilletera.transferir(40.0); 
 		miBilletera.transferir(60.0); 
 	    miBilletera.mostrarSaldo(); 
-<<<<<<< HEAD
 
 
 
@@ -33,8 +32,5 @@ public class Main {
 
 		
 
-=======
-		 scanner.close();
->>>>>>> 56c6dacd43545dc9aa3cc76bdf0186af6ff6783f
 	    } 
 	    } 
