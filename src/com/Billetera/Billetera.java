@@ -2,7 +2,7 @@ package com.Billetera;
 
 public class Billetera {
 	 double balanceTotal; 
-	 String moneda = "USD";
+	 String moneda = "USD";       
 	 String titular; 
 	 boolean cuentaActiva = true; 
 	 
@@ -13,7 +13,7 @@ public class Billetera {
 	 
 	    public void transferir(double monto) { 
 			if(monto>balanceTotal){
- 			System.out.println("Fondos Insuficiente " );
+ 			System.out.println("Fondos Insuficiente " );    
 				return;
 			}
 			balanceTotal= balanceTotal- (monto*1.05);
