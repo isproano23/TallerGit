@@ -10,11 +10,11 @@ public class Billetera {
 	        this.titular = titular; 
 	        this.balanceTotal = saldoInicial; 
 	    } 
-	 // probando 
+	 
 	    public void transferir(double monto) { 
 	        balanceTotal= balanceTotal- monto; 
 	    } 
-	 
+	 // probar 
 	    public void mostrarSaldo() { 
 	        System.out.println("Saldo de " + titular + ": $" + balanceTotal); 
 	    } 
