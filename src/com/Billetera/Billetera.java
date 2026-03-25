@@ -2,7 +2,7 @@ package com.Billetera;
 
 public class Billetera {
 	 double balanceTotal; 
-	 String moneda = "USD";
+	 String moneda = "USD";       
 	 String titular; 
 	 boolean cuentaActiva = true; 
 	 
@@ -25,4 +25,4 @@ public class Billetera {
 	        System.out.println("Saldo de " + titular + ": $" + balanceTotal); 
 	    } 
 	}
-
+ 
